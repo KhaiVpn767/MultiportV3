@@ -53,6 +53,8 @@ wget -O restart "https://raw.githubusercontent.com/KhaiVpn767/MultiportV3/main/S
 wget -O ram "https://raw.githubusercontent.com/KhaiVpn767/MultiportV3/main/SSH/ram.sh"
 wget -O dns "https://raw.githubusercontent.com/KhaiVpn767/MultiportV3/main/SSH/dns.sh"
 wget -O nf "https://raw.githubusercontent.com/KhaiVpn767/MediaUnlockerTest/main/media.sh"
+wget -O nf "https://raw.githubusercontent.com/KhaiVpn767/MultiportV3/main/XRAY/add-vless.sh"
+wget -O nf "https://raw.githubusercontent.com/KhaiVpn767/MultiportV3/main/XRAY/user-vless.sh"
 chmod +x limit
 chmod +x bbr
 chmod +x add-ssh
@@ -75,6 +77,8 @@ chmod +x restart
 chmod +x ram
 chmod +x dns
 chmod +x nf
+chmod +x add-vless
+chmod +x user-vless
 echo -e " [INFO] Update Successfully"
 sleep 2
 echo ""
