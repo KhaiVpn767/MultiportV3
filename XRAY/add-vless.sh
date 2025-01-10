@@ -146,14 +146,14 @@ systemctl restart xray@vnone.service
 service cron restart
 vlesslink1="vless://${uuid}@${sts}${domain}:${tls}?type=ws&encryption=none&security=tls&host=${domain}&path=/vless-tls&allowInsecure=1&sni=${sni}#XRAY_VLESS_TLS_${user}"
 vlesslink2="vless://${uuid}@${sts}${domain}:${none}?type=ws&encryption=none&security=none&host=${domain}&path=/vless-ntls#XRAY_VLESS_NON_TLS_${user}"
-vlesslink3="vless://${uuid}@162.159.134.61:80?path=/vless&encryption=none&host=${sts}${domain}&type=ws#DIGI-BOSSTER-${user}"
-vlesslink4="vless://${uuid}@172.66.40.170:80?path=/vless&encryption=none&host=${sts}cdn.opensignal.com.${domain}&type=ws#DIGI-BOSSTER-V2-${user}"
-vlesslink5="vless://${uuid}@${domain}:80?path=/vless&encryption=none&host=m.pubgmobile.com&type=ws#UMOBILE-FUNZ-${user}"
-vlesslink6="vless://${uuid}@104.18.8.53:80?path=/vless&encryption=none&host=${sts}${domain}&type=ws#UMOBILE-${user}"
-vlesslink7="vless://${uuid}@104.17.113.188:80?path=/vless&encryption=none&host=eurohealthobservatory.who.int.${domain}&type=ws#YES-${user}"
-vlesslink8="vless://${uuid}@104.17.10.12:80?path=/vless&encryption=none&host=cdn.who.int.${domain}&type=ws#UNIFI-Bebas-${user}"
-vlesslink9="vless://${uuid}@speedtest.unifi.com.my.${domain}:80?path=/vless&encryption=none&host=&type=ws#Uni5G-${user}"
-vlesslink10="vless://${uuid}@104.18.6.178:80?path=/vless&encryption=none&host=speedtest-univ-results-api.speedtest.net.${domain}&type=ws#MAXIS-FREEZE-${user}"
+vlesslink3="vless://${uuid}@162.159.134.61:80?path=/vless-ntls&encryption=none&host=${sts}${domain}&type=ws#DIGI-BOSSTER-${user}"
+vlesslink4="vless://${uuid}@172.66.40.170:80?path=/vless-ntls&encryption=none&host=${sts}cdn.opensignal.com.${domain}&type=ws#DIGI-BOSSTER-V2-${user}"
+vlesslink5="vless://${uuid}@${domain}:80?path=/vless-ntls&encryption=none&host=m.pubgmobile.com&type=ws#UMOBILE-FUNZ-${user}"
+vlesslink6="vless://${uuid}@104.18.8.53:80?path=/vless-ntls&encryption=none&host=${sts}${domain}&type=ws#UMOBILE-${user}"
+vlesslink7="vless://${uuid}@104.17.113.188:80?path=/vless-ntls&encryption=none&host=eurohealthobservatory.who.int.${domain}&type=ws#YES-${user}"
+vlesslink8="vless://${uuid}@104.17.10.12:80?path=/vless-ntls&encryption=none&host=cdn.who.int.${domain}&type=ws#UNIFI-Bebas-${user}"
+vlesslink9="vless://${uuid}@speedtest.unifi.com.my.${domain}:80?path=/vless-ntls&encryption=none&host=&type=ws#Uni5G-${user}"
+vlesslink10="vless://${uuid}@104.18.6.178:80?path=/vless-ntls&encryption=none&host=speedtest-univ-results-api.speedtest.net.${domain}&type=ws#MAXIS-FREEZE-${user}"
 cat >/home/vps/public_html/$user-VLESSTLS.yaml <<EOF
 port: 7890
 socks-port: 7891
