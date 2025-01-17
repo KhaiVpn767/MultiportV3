@@ -223,7 +223,7 @@ echo -e "\e[33m╘════════════════════�
 [\033[1;33m18\033[0m]  Restore
 [\033[1;33m19\033[0m]  Reboot
 [\033[1;33m20\033[0m]  Menu Helium
-[\033[1;33m21\033[0m]  name ns"
+[\033[1;33m21\033[0m]  Update-script"
 echo ""
 echo -e "\e[33m╒════════════════════════════════════════════╕\033[0m"
 echo -e " Version       :\033[1;36m SSH XRAY WS Multiport : v3\e[0m"
@@ -352,10 +352,10 @@ case $opt in
 	clear
 	menu-helium.sh
 	;;
- 21)
+21)
 	clear
-	wget https://raw.githubusercontent.com/KhaiVpn767/SlowDnsV1/main/dns2.sh && chmod +x dns2.sh && ./dns2.sh
-	;;
+	updatefile.sh
+        ;;
 00 | 0)
 	clear
 	menu
