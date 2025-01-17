@@ -55,6 +55,7 @@ wget -O dns "https://raw.githubusercontent.com/KhaiVpn767/MultiportV3/main/SSH/d
 wget -O nf "https://raw.githubusercontent.com/KhaiVpn767/MediaUnlockerTest/main/media.sh"
 wget -O nf "https://raw.githubusercontent.com/KhaiVpn767/MultiportV3/main/XRAY/add-vless.sh"
 wget -O nf "https://raw.githubusercontent.com/KhaiVpn767/MultiportV3/main/XRAY/user-vless.sh"
+wget -O menu-helium.sh "https://raw.githubusercontent.com/KhaiVpn767/MultiportV3/refs/heads/main/SSH/menu-helium.sh"
 chmod +x limit
 chmod +x bbr
 chmod +x add-ssh
@@ -79,6 +80,7 @@ chmod +x dns
 chmod +x nf
 chmod +x add-vless
 chmod +x user-vless
+chmod +x menu-helium.sh
 echo -e " [INFO] Update Successfully"
 sleep 2
 echo ""
