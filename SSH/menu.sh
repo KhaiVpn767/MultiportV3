@@ -350,7 +350,7 @@ case $opt in
 	;;
 20)
 	clear
-	menu-helium
+	menu-helium.sh
 	;;
  21)
 	clear
